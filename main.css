@@ -1,5 +1,5 @@
 .navbar.navbar-transparent {
-    background-color: transparent !important;
+    background-color: transparent;
     box-shadow: none;
     color: #FFFFFF;
     padding-top: 20px;
@@ -10,39 +10,9 @@
     letter-spacing: 1px;
 }
 
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 60;
-    z-index: 1030;
-}
-
-.navbar-toggler {
-    padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background: 0 0;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    width: 37px;
-    height: 27px;
-    outline: 0;
-    cursor: pointer;
-}
-
 .navbar-brand {
     display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 20px;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-}
-
-.bg-primary {
-    background-color: #4a0f82 !important;
+    padding-bottom: 13px;
 }
 
 body {
@@ -63,7 +33,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/instabackground.jpeg");
 
     /* Set a specific height */
-    height: 80%;
+    height: 85%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -112,7 +82,8 @@ html {
 
 }
 
-.btn.btn-icon.btn-lg, .navbar .navbar-nav > a.btn.btn-icon.btn-lg {
+.btn.btn-icon.btn-lg,
+.navbar .navbar-nav>a.btn.btn-icon.btn-lg {
     background-color: rgb(196, 239, 242);
     color: rgb(64, 9, 119);
     min-width: 3.6rem;
@@ -131,4 +102,60 @@ html {
 .title {
     font-weight: 700;
     margin-bottom: 20px;
+}
+
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0; 
+     margin-left: 0; 
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
 }

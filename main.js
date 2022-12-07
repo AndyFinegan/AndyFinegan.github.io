@@ -1,12 +1,20 @@
- // Activate the image for the navbar-collapse
- nowuiKit.initNavbarImage();
+function changeNavBarColor() {
+    //get the current scroll position
+    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
- $navbar = $('.navbar[color-on-scroll]');
- scroll_distance = $navbar.attr('color-on-scroll') || 500;
+    //get the navbar element
+    var navbar = document.getElementById('switch');
 
- // Check if we have the class "navbar-color-on-scroll" then add the function to remove the class "navbar-transparent" so it will transform to a plain color.
+    //if the scroll position is greater than 570, change the navbar background to purple
+    if (scrollPosition > 670) {
+        $(navbar).css('background-color', '#4a0f82');
+    }
+    //if the scroll position is 0, change the navbar background to default
+    else {
+        $(navbar).css('background-color', 'transparent');
+    }
+}
 
- if ($('.navbar[color-on-scroll]').length != 0) {
-     nowuiKit.checkScrollForTransparentNavbar();
-     $(window).on('scroll', nowuiKit.checkScrollForTransparentNavbar)
- }
+//add an event listener that calls the changeNavBarColor function when the page is scrolled
+window.addEventListener('scroll', changeNavBarColor);
+
