@@ -16,7 +16,7 @@
 }
 
 body {
-    color: #2c2c2c;
+    color: rgb(192, 192, 192);
     font-size: 14px;
     font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
@@ -25,9 +25,15 @@ body,
 html {
     height: 110%;
     scroll-behavior: smooth;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(37, 37, 37);
 }
 
+th {
+color: rgb(192, 192, 192);
+font-size: 14px;
+font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+padding: 10px;
+}
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -56,13 +62,23 @@ html {
 .profile-image img {
     position: relative;
     border-radius: 50%;
-    height: 260px;
-    width: 235px;
+    height: 310px;
+    width: 290px;
     padding: 0;
     margin: 0;
     border: 15px solid transparent;
     text-align: center;
+}
+
+.school-image img {
     position: relative;
+    border-radius: 50%;
+    height: 260px;
+    width: 290px;
+    padding: 0;
+    margin: 0;
+    border: 15px solid transparent;
+    text-align: center;
 }
 
 .h1 {
@@ -81,6 +97,10 @@ html {
 
 
 }
+
+ h2 {
+   text-align: center;
+} 
 
 .h3, h3 {
     font-size: 1.63rem;
@@ -108,7 +128,7 @@ p{
     padding: 70px 0;
     position: relative;
     background: transparent;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(37, 37, 37);
 }
 
 .section-icons {
@@ -122,14 +142,18 @@ p{
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: rgb(37, 37, 37);
+    color:rgb(192, 192, 192);
 }
 
 
-.title-school {
+
+
+.title-school, .title-aboutme {
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
+    color: rgb(192, 192, 192);
 }
 
 .button {
@@ -152,9 +176,30 @@ p{
     padding: 0 8px;
 }
 
+.col-md-3,.col-md-9,.col-md-12,.col-lg-6 {
+    background-color:rgb(47, 47, 47);
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+
+}
+
+.col-sm-4,.col-sm-8 {
+    background-color:rgb(47, 47, 47);
+
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: 8px;
+    background-color: rgb(47, 47, 47);
+    padding-bottom: 0 8px;
+}
+
+.aboutme-card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    margin: 8px;
+    background-color: rgb(64, 9, 119);
 }
 
 .about-section {
@@ -175,7 +220,13 @@ p{
     flex-wrap: wrap;
     margin-right: 0; 
      margin-left: 0; 
-     background-color: rgb(243, 243, 243);
+     background-color: rgb(37, 37, 37);
+}
+
+.hobby-padding{
+    padding-bottom: 20px;
+    background-color: rgb(37, 37, 37);
+
 }
 
 .button:hover {
@@ -205,15 +256,27 @@ p{
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgb(37, 37, 37);
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-button {
+    background-color: rgb(47, 47, 47);
+    border: none;
+    color:rgb(192, 192, 192);
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+  }
+
 /* The Close Button */
-.close {
+.close,.close2 {
   color: #aaa;
   float: right;
   font-size: 28px;
@@ -221,7 +284,9 @@ p{
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.close2:hover,
+.close2:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
