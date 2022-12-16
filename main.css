@@ -33,7 +33,26 @@ color: rgb(192, 192, 192);
 font-size: 14px;
 font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 padding: 10px;
+padding-right: 8rem;
+
 }
+
+td{
+    padding-right: 7.5rem;
+    padding-top: 2rem;
+    padding-bottom: 0.2rem;
+
+}
+
+.module {
+    color: rgb(192, 192, 192);
+    font-size: 14px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    padding: 10px;
+    text-align: left;
+    }
+
+
 /* The hero image */
 .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -100,6 +119,9 @@ padding: 10px;
 
  h2 {
    text-align: center;
+   margin-top: 5rem;
+   margin-bottom: 2rem;
+
 } 
 
 .h3, h3 {
@@ -109,7 +131,7 @@ padding: 10px;
 
 p{
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     text-align: center;
 }
 
@@ -156,6 +178,14 @@ p{
     color: rgb(192, 192, 192);
 }
 
+.title-projects {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: rgb(192, 192, 192);
+}
+
 .button {
     border: none;
     border-radius: 12px;
@@ -176,7 +206,14 @@ p{
     padding: 0 8px;
 }
 
-.col-md-3,.col-md-9,.col-md-12,.col-lg-6 {
+.column-contact {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.col-md-3,.col-md-6,.col-md-9,.col-md-12,.col-lg-6 {
     background-color:rgb(47, 47, 47);
     padding-top: 8px;
     padding-bottom: 8px;
@@ -194,6 +231,7 @@ p{
     margin: 8px;
     background-color: rgb(47, 47, 47);
     padding-bottom: 0 8px;
+    border-color: rgb(64, 9, 119);
 }
 
 .aboutme-card {
@@ -220,7 +258,9 @@ p{
     flex-wrap: wrap;
     margin-right: 0; 
      margin-left: 0; 
-     background-color: rgb(37, 37, 37);
+
+     border: 1px;
+     border-color: rgb(64, 9, 119);
 }
 
 .hobby-padding{
@@ -291,3 +331,33 @@ p{
   text-decoration: none;
   cursor: pointer;
 }
+
+.collapsible {
+    background-color: rgb(47, 47, 47);
+    color: rgb(192, 192, 192);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    outline: none;
+    font-size: 1.63rem;    
+    border-color: rgb(64, 9, 119);
+  }
+  
+  
+  .active, .collapsible:hover {
+    background-color: rgb(37, 37, 37);
+    border-color: rgb(64, 9, 119);
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: rgb(47, 47, 47);
+    border-color: rgb(64, 9, 119);
+  }
+
+
+  
