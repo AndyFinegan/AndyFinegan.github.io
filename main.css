@@ -113,8 +113,15 @@ td{
     margin-top: 30px;
     color: rgb(196, 239, 242);
     padding-top: 30px;text-align: center;
+}
 
-
+.h2-features {
+    font-size: 23px;
+    font-family: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+    color: rgb(192, 192, 192);
+    padding-top: 30px;text-align: center;
 }
 
  h2 {
@@ -217,8 +224,6 @@ p{
     background-color:rgb(47, 47, 47);
     padding-top: 8px;
     padding-bottom: 8px;
-
-
 }
 
 .col-sm-4,.col-sm-8 {
